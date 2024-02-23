@@ -1,0 +1,289 @@
+:root{
+    --body-color: #B0BDC9;
+    --carrousel-arrow: #49505e;
+    --main-txt-color: #ffffff;
+    --txt-border-color: #000000;
+}
+h1{
+    text-align: center;
+    margin: 20px 0;
+    color: var(--main-txt-color);
+    text-shadow: 1px 1px 0 var(--txt-border-color), 1px -1px 0 var(--txt-border-color), -1px 1px 0 var(--txt-border-color), -1px -1px 0 var(--txt-border-color), 1px 0px 0 var(--txt-border-color), 0px 1px 0 var(--txt-border-color), -1px 0px 0 var(--txt-border-color), 0px -1px 0 var(--txt-border-color);
+}
+.carrousel-divs {
+    position: absolute;
+    width: 400px; /* Adjust based on your images' size */
+    height: 400px; /* Adjust based on your images' size */
+}
+/* Example positions for your images */
+#pos1-div { left: 0px; transform: scale(0.9); opacity: 0.5; z-index: 1;}
+#pos2-div { left: 150px; transform: scale(0.98); opacity: 0.7; z-index: 2;}
+#pos3-div { left: 300px; transform: scale(1); opacity: 1; z-index: 3;}
+#pos4-div { left: 450px; transform: scale(0.98); opacity: 0.7; z-index: 2;}
+#pos5-div { left: 600px; transform: scale(0.9); opacity: 0.5; z-index: 1;}
+
+.carrousel-imgs {
+    height: 100%;
+    width: 100%; 
+}
+
+.carrousel-container {
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* This will horizontally center your items */
+    align-items: center; /* This will vertically center your items */
+    overflow: hidden;
+    position: relative; /* Needed for absolute positioning of the arrows */
+}
+
+.level-1 {
+    opacity: 1;
+    z-index: 3;
+    transform: scale(1);
+}
+.level-2 {
+    opacity: 0.5;
+    z-index: 2;
+    transform: scale(0.8);
+}
+.level-3 {
+    opacity: 0.3;
+    z-index: 1;
+    transform: scale(0.6);
+}
+#about-box{
+    width: 58svw;
+    margin: 25px auto;
+    background-color: #6B7B8C;
+    color: aliceblue;
+    padding: 10px 25px;
+}
+button{
+	background: none;
+	color: var(--carrousel-arrow);
+	border: none;
+	padding: 0;
+	font-size: 100px;
+	cursor: pointer;
+	outline: inherit;
+}
+#prevButton{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    z-index: 10;
+}
+#nextButton{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 945px;
+    z-index: 10;
+}
+html {
+    height: 100%;
+    background-color: var(--body-color);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--body-color);
+}
+ 
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #6B7B8C;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 10px 5px #888888;
+    position: sticky;
+}
+#Logobox {
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+#Logobox img {
+    width: 100%;
+    height: 100%;
+}
+nav {
+    width: 60%;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.NavOp {
+    max-width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Lexend Mega;
+    margin-right: 10px;
+    font-size: 10pt;
+    text-align: center;
+}
+a , a:visited{
+    text-decoration: none;
+    color: white;
+}
+#CartBox {
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+.material-icons {
+    color: white;
+    transform: scale(2);
+    margin-top: 60px;
+}
+
+ 
+@media screen and (max-width: 980px) {
+    header {
+        flex-direction: column;
+        height: 200px;
+        
+    }
+    #Logobox {
+        width: 130px;
+        height: 130px;
+        margin: 0 auto;
+        order: 1;
+    }
+    nav {
+        width: 90%;
+        height: 50px;
+        order: 3;
+        margin: 0 auto;
+    }
+    .NavOp {
+        height: 50px;
+        font-size: 7pt;
+    }
+    #CartBox {
+        width: 100%;
+        height: 50px;
+        order: 2;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -100px;
+        
+    }
+    .material-icons {
+        font-size: 30px;
+        margin-right: 10vw;
+        transform: scale(2);
+        margin-top: 0vw;
+        display: none;
+    }
+}
+footer {
+    width: 100%;
+    max-height: 300px;
+    background-color: #6B7B8C;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px -10px 5px #888888;
+}
+.footbox {
+    width: 33%;
+    display: flex;
+    color: white;
+}
+.footbox img {
+    height: 70%;
+}
+#red {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#red h2 {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#green {
+    text-align: center;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#green h2 {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#SocialsBox {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3vw;
+}
+#CopyText {
+    margin-top: 4vw;
+}
+#Facebook {
+    color: white;
+    font-size: 30pt;
+    transform: scale(3);
+    margin: 0 auto;
+}
+#Insta {
+    color: white;
+    font-size: 30pt;
+    transform: scale(3);
+    margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+    footer {
+        max-height: 300px;
+    }
+    #FootLogoBox {
+        display: none;
+    }
+    #red {
+        width: 50%;
+        font-size: 3vw;
+    }
+    #red h2 {
+        max-width: 80%;
+    }
+    #green {
+        width: 50%;
+        font-size: 3vw;
+    }
+    #green h2 {
+        max-width: 80%;
+    }
+    .SmallFont {
+        font-size: 2.5vw;
+    }
+    #Facebook {
+        transform: scale(2);
+    }
+    #Insta {
+        transform: scale(2);
+    }
+    #CopyText {
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 600px) {
+    #Facebook {
+        transform: scale(1.3);
+    }
+    #Insta {
+        transform: scale(1.3);
+    }
+}
