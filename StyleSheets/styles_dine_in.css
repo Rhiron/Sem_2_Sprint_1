@@ -22,7 +22,7 @@ header {
   box-shadow: 0px 10px 5px rgb(59, 59, 59);
   position: fixed;
   z-index: 1000;
-  font: Lexend Mega;
+  font-family: Lexend Mega;
 }
 
 #Logobox {
@@ -238,7 +238,7 @@ h3 {
   padding-bottom: 2px;
 }
 
-h2 {
+h2.section-names {
   font-family: "Charm", cursive;
   font-weight: 700;
   font-style: normal;

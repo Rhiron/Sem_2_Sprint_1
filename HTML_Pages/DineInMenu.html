@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../StyleSheets/GaryBlueHome.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
   </head>
   <body>
     
@@ -21,7 +23,7 @@
                 <a href="../HTML_Pages/GaryBlueHome.html"><h2>Home</h2></a>
             </div>
             <div class="NavOp">
-                <a href=""><h2>Dine-in Menu</h2></a>
+                <a href="#"><h2>Dine-in Menu</h2></a>
             </div>
             <div class="NavOp">
                 <a href="../HTML_Pages/TakeOutMenu.html"><h2>Take-out Menu</h2></a>
@@ -46,7 +48,7 @@
         <h1>Dine In House Menu</h1>
         <div class="parallax"></div>
 
-        <h2>Appetizers</h2>
+        <h2 class="section-names">Appetizers</h2>
 
         <h4>Click each menu item for description</h4>
         <button class="accordion"><h3>Pulled Pork Sliders $20</h3><br></button>
@@ -79,7 +81,7 @@
 
         <div class="parallax2"></div>
 
-        <h2>Entree</h2>
+        <h2 class="section-names">Entree</h2>
         <h4>Click each menu item for description and pick two sides from below </h4>
         <button class="accordion"><h3>Savoury Stuffed Chicken Breast $45</h3></button>
             <div class="panel">a mix of white and dark meat with signature house savoury dressing</div>
@@ -131,7 +133,7 @@
 
 
         <div class="parallax3"></div>
-        <h2>Sides</h2>
+        <h2 class="section-names">Sides</h2>
 
         <button class="accordion"><h3>Butter Smashed Potatoes</h3></button>
         <button class="accordion"><h3>Croquette Potatoes</h3></button>
@@ -141,7 +143,7 @@
         <button class="accordion"><h3>Broccoli and Cauliflower au Gratin</h3></button>
 
         <div class="parallax4"></div>
-        <h2>Dessert</h2>
+        <h2 class="section-names"">Dessert</h2>
         <h4>Click each menu item for description</h4>
 
         <button class="accordion"><h3>Sticky Toffee Pudding $14</h3></button>
@@ -179,9 +181,32 @@
         });
         }
         </script>
-
-
-
+        <footer>
+            <div class="footbox" id="FootLogoBox">
+                <img src="../GaryBluesPics/ReGaryLogo-removebg-preview.png" alt="">
+            </div>
+            <div class="footbox" id="red">
+                <h2>Reach us here: <br><br>
+                <span class="SmallFont">
+                Phone: (123)456-7890 <br><br>
+    
+                Email: Gary_Blue@Email.com</span></h2>
+            </div>
+            <div class="footbox" id="green">
+                <h2>Follow us on:</h2>
+                <div id="SocialsBox">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="gg-facebook" id="Facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="gg-instagram" id="Insta"></i></a>
+                </div>
+                <span id="CopyText">
+                    <h2>&copy;Gary Blues - 2024 <br><br>
+                        Website created by: MRK designs
+                    </h2>
+                </span>
+            </div>
+        </footer>
 </body></body>
  
 </html>
