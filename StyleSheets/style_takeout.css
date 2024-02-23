@@ -8,10 +8,14 @@ body {
   padding-top: 150px;
   font-family: Arial, sans-serif;
   background-color: #b0bdc9;
+
+}
+#bigbox {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 header {
   width: 100%;
   height: 150px;
@@ -54,6 +58,7 @@ nav {
   margin-right: 10px;
   font-size: 10pt;
   text-align: center;
+  margin-top: 5px;
 }
 
 a {
@@ -137,7 +142,7 @@ main {
 
 .item {
   margin-bottom: 10px;
-  font-family: "DM Serif Display", "serif";
+  font-family: Lexend Mega;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
@@ -176,7 +181,7 @@ main {
   padding-top: 10px;
 }
 h3 {
-  font-family: "Charm", cursive;
+  font-family: Lexend Mega;
   font-weight: 700;
   font-style: normal;
   font-size: 40px;
@@ -186,7 +191,7 @@ h3 {
 }
 
 h2.section-names {
-  font-family: "Charm", cursive;
+  font-family: Lexend Mega;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
@@ -282,6 +287,19 @@ footer {
   transform: scale(3);
   margin: 0 auto;
 }
+.inp {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.sub {
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 980px) {
   footer {
       max-height: 300px;

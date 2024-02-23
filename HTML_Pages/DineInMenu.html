@@ -1,3 +1,7 @@
+<!-- Sprint 1 - Website for Gary Blues Diner
+Code written by: Mitchel, Riley, and Kelly
+Date February 17th - February 24, 2024
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&display=swap" rel="stylesheet">
+
   </head>
   <body>
     
@@ -20,32 +26,32 @@
   
         <nav>
             <div class="NavOp">
-                <a href="../HTML_Pages/GaryBlueHome.html"><h2 class="head_txt">Home</h2></a>
+                <a href="../HTML_Pages/GaryBlueHome.html"><h2>Home</h2></a>
             </div>
             <div class="NavOp">
-                <a href="#"><h2 >Dine-in Menu</h2></a>
+                <a href="#"><h2>House Menu</h2></a>
             </div>
             <div class="NavOp">
-                <a href="../HTML_Pages/TakeOutMenu.html"><h2 class="head_txt">Take-out Menu</h2></a>
+                <a href="../HTML_Pages/TakeOutMenu.html"><h2>Take-out Menu</h2></a>
             </div>
             <div class="NavOp">
-                <a href="../HTML_Pages/about.html"><h2 class="head_txt">About</h2></a>
+                <a href="../HTML_Pages/about.html"><h2>About</h2></a>
             </div>
         </nav>
   
-        <div id="cart-icon">
+        <div id="CartBox">
             <!-- <i class="material-icons">shopping_cart</i> -->
         </div>
     </header>
 
-      <main>
-       
-   
-        <a name="Top"></a>
-        <h1>Dine In House Menu</h1>
-        <div class="parallax"></div>
 
-        <h2 class="section-names">Appetizers</h2>
+    <div id="bigbox">
+      <main>
+        <a name="Top"></a>
+        <h1>House Menu</h1>
+        <div class="parallax" id="Apps"></div>
+        
+        <h2 class="section-names" >Appetizers</h2>
 
         <h4>Click each menu item for description</h4>
         <button class="accordion"><h3>Pulled Pork Sliders $20</h3><br></button>
@@ -76,9 +82,9 @@
 
 
 
-        <div class="parallax2"></div>
+        <div class="parallax2" id="Entr"></div>
 
-        <h2 class="section-names">Entree</h2>
+        <h2 class="section-names" >Entree</h2>
         <h4>Click each menu item for description and pick two sides from below </h4>
         <button class="accordion"><h3>Savoury Stuffed Chicken Breast $45</h3></button>
             <div class="panel">a mix of white and dark meat with signature house savoury dressing</div>
@@ -139,8 +145,8 @@
         <button class="accordion"><h3>Roasted Roots</h3></button>
         <button class="accordion"><h3>Broccoli and Cauliflower au Gratin</h3></button>
 
-        <div class="parallax4"></div>
-        <h2 class="section-names"">Dessert</h2>
+        <div class="parallax4" id="Desse"></div>
+        <h2 class="section-names" >Dessert</h2>
         <h4>Click each menu item for description</h4>
 
         <button class="accordion"><h3>Sticky Toffee Pudding $14</h3></button>
@@ -178,6 +184,7 @@
         });
         }
         </script>
+        </main>
         <footer>
             <div class="footbox" id="FootLogoBox">
                 <img src="../GaryBluesPics/ReGaryLogo-removebg-preview.png" alt="">
@@ -204,6 +211,9 @@
                 </span>
             </div>
         </footer>
+    </div>
 </body>
  
 </html>
+
+
