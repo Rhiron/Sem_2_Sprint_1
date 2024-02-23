@@ -185,7 +185,7 @@ h3 {
   padding-bottom: 0px;
 }
 
-h2 {
+h2.section-names {
   font-family: "Charm", cursive;
   font-weight: 700;
   font-style: normal;

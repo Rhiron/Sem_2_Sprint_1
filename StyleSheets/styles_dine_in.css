@@ -24,7 +24,9 @@ header {
   z-index: 1000;
   font-family: Lexend Mega;
 }
-
+.head_txt{
+  font-family: Lexend Mega;
+}
 #Logobox {
   width: 150px;
   height: 150px;
@@ -237,7 +239,11 @@ h3 {
   padding-top: 2px;
   padding-bottom: 2px;
 }
-
+#cart-icon {
+  width: 150px;
+  height: 150px;
+  
+}
 h2.section-names {
   font-family: "Charm", cursive;
   font-weight: 700;
@@ -368,7 +374,7 @@ center {
   text-align: -webkit-center;
 }
 
-div {
+main div {
   display: block;
 }
 
