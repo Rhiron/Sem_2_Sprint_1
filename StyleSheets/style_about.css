@@ -7,8 +7,8 @@
 h1{
     text-align: center;
     margin: 20px 0;
-    color: var(--main-txt-color);
-    text-shadow: 1px 1px 0 var(--txt-border-color), 1px -1px 0 var(--txt-border-color), -1px 1px 0 var(--txt-border-color), -1px -1px 0 var(--txt-border-color), 1px 0px 0 var(--txt-border-color), 0px 1px 0 var(--txt-border-color), -1px 0px 0 var(--txt-border-color), 0px -1px 0 var(--txt-border-color);
+    color: #000000;
+    font-family: Lexend Mega;
 }
 .carrousel-divs {
     position: absolute;
